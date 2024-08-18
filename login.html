@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <img src="gif.gif" alt="Background GIF" class="background-gif">
+    <div class="login-container">
+        <form class="login-form" id="loginForm" aria-live="polite">
+            <h1>Login</h1>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" aria-required="true" aria-describedby="usernameError">
+                <div class="error" id="usernameError" aria-live="assertive">Please enter your username.</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" aria-required="true" aria-describedby="passwordError">
+                <span class="toggle-password" onclick="togglePassword()">Show</span>
+                <div class="password-strength">
+                    <div class="strength-bar" id="strengthBar"></div>
+                </div>
+                <div class="error" id="passwordError" aria-live="assertive">Please enter your password.</div>
+                <div class="error" id="strengthError" aria-live="assertive">Password strength is too low.</div>
+            </div>
+            <button type="submit" class="btn-submit" disabled>Login</button>
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NerdHeaven</title>
+    <link rel="stylesheet" href="heaven.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Gamer Hub Logo">
+                <h1>NerdHeaven</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="popular">Popular</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">All</a></li>
+                </ul>
+            </nav>
+            <div class="custom-feeds">
+                <h2>Custom Feeds</h2>
+                <a href="#">Create a custom feed</a>
+            </div>
+            <div class="recent">
+                <h2>Recent</h2>
+                <a href="#">r/CrackSupport</a>
+            </div>
+            <div class="communities">
+                <h2>Communities</h2>
+                <a href="#">Create a community</a>
+                <a href="#">r/announcements</a>
+                <a href="#">r/CrackSupport</a>
+                <a href="#">r/Nepal</a>
+            </div>
+        </aside>
+        <main class="content">
+            <header class="header">
+                <input type="search" placeholder="Search Gamer Hub">
+                <a href="login.html" class="logout-btn">Logout</a>
+            </header>
+
+            <!-- Home Page Section -->
+            <section id="home-page" class="page">
+                <section class="post-comment-section">
+                    <form id="comment-form">
+                        <textarea id="comment-text" placeholder="What's on your mind?" required></textarea>
+                        <input type="file" id="comment-image" accept="image/*">
+                        <button type="submit" class="btn-post">Post</button>
+                    </form>
+                </section>
+                <section class="comments-section">
+                    <div id="comments-list">
+                        <!-- Comments will be dynamically added here -->
+                    </div>
+                </section>
+            </section>
+
+            <!-- Popular Page Section -->
+            <section id="popular-page" class="page" style="display: none;">
+                <h2>Popular Posts</h2>
+                <div id="popular-list">
+                    <!-- Dummy posts will be added here -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="heaven.js"></script>
+</body>
+</html>

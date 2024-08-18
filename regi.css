@@ -1,0 +1,122 @@
+/* regi.css */
+
+/* Reset some basic styling for consistency across browsers */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('gif.gif'); /* Assuming this is the original background */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.register-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.register-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group .toggle-password {
+    display: block;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #007BFF;
+    font-size: 12px;
+}
+
+.password-strength {
+    margin-top: 5px;
+}
+
+.strength-bar {
+    height: 5px;
+    background-color: #ccc;
+    width: 0;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.btn-submit {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+    opacity: 0.5;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn-submit.active {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.register-form p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-form p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.register-form p a:hover {
+    text-decoration: underline;
+}
+
+/* GIF Styling */
+.overlay-gif {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 80px; /* Smaller size for the GIF */
+    height: auto;
+    z-index: 1000; /* Keep the GIF on top of other elements */
+}
